@@ -11,7 +11,7 @@ To deploy the required Azure VNET and Active Directory infrastructure, if not al
 
 Click the button below to deploy
 
-<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fazresiliency.blob.core.windows.net%2F301-storage-spaces-direct-md-zones%2Fazuredeploy.json" target="_blank">
+<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fnospmb%2FAzure%2Fmaster%2F301-storage-spaces-direct-md-zones%2Fazuredeploy.json" target="_blank">
     <img src="http://azuredeploy.net/deploybutton.png"/>
 </a>
 <a href="http://armviz.io/#/?load=https%3A%2F%2Fresiliency.blob.core.windows.net%2F301-storage-spaces-direct-md-zones%2Fazuredeploy.json" target="_blank">
