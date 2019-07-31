@@ -1,0 +1,33 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "namePrefix": {
+      "value": "dc95sofs"
+    },
+    "existingDomainName": {
+      "value": "sf.priv"
+    },
+    "existingDomainNetbiosName": {
+      "value": "SFDC"
+    },
+    "existingOuName": {
+      "value": "pc095-infra"
+    },
+    "adminUsername": {
+      "value": "GEN-UNIQUE"
+    },
+    "adminPassword": {
+      "value": "GEN-PASSWORD"
+    },
+    "existingVirtualNetworkName": {
+      "value": "ss95-vnet"
+    },
+    "existingVirtualNetworkRGName": {
+      "value": "ss95-network-rg"
+    },    
+    "existingSubnetName": {
+      "value": "ss95-storage-sbn"
+    }
+  }
+}
