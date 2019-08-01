@@ -121,7 +121,7 @@
     }
   },
   "variables": {
-    "apiVersionStorage": "2016-01-01",
+    "apiVersionStorage": "2018-07-01",
     "witnessStorageName": "[concat(parameters('namePrefix'),uniqueString(resourceGroup().id),'cw')]",
     "witnessStorageType": "Standard_LRS",
     "vmNamePrefix": "[concat(parameters('namePrefix'),'-s2d-')]",
@@ -141,7 +141,7 @@
     {
       "type": "Microsoft.Storage/storageAccounts",
       "name": "[variables('witnessStorageName')]",
-      "apiVersion": "2016-01-01",
+      "apiVersion": "2018-07-01",
       "location": "[parameters('location')]",
       "sku": {
         "name": "[variables('witnessStorageType')]"
@@ -152,7 +152,7 @@
       "name": "[concat(variables('vmNamePrefix'), copyindex(), '-nic')]",
       "type": "Microsoft.Network/networkInterfaces",
       "location": "[parameters('location')]",
-      "apiVersion": "2016-10-01",
+      "apiVersion": "2018-10-01",
       "copy": {
         "name": "nicLoop",
         "count": "[parameters('vmCount')]"
@@ -173,7 +173,7 @@
     },
     {
       "type": "Microsoft.Resources/deployments",
-      "apiVersion": "2015-01-01",
+      "apiVersion": "2016-09-01",
       "copy": {
         "name": "virtualMachineLoop",
         "count": "[parameters('vmCount')]"
@@ -236,7 +236,7 @@
     {
       "type": "Microsoft.Compute/virtualMachines/extensions",
       "name": "[concat(variables('vmNamePrefix'),copyindex(1),'/s2dPrep')]",
-      "apiVersion": "2017-03-30",
+      "apiVersion": "2018-10-01",
       "location": "[parameters('location')]",
       "dependsOn": [
         "virtualMachineLoop"
@@ -273,7 +273,7 @@
     {
       "type": "Microsoft.Compute/virtualMachines/extensions",
       "name": "[concat(variables('vmNamePrefix'),'0/s2dConfig')]",
-      "apiVersion": "2017-03-30",
+      "apiVersion": "2018-10-01",
       "location": "[parameters('location')]",
       "dependsOn": [
         "virtualMachineLoop",
