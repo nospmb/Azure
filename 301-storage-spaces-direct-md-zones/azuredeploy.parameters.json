@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "namePrefix": {
-      "value": "dc95sofs"
+      "value": "dc41sofs"
     },
     "existingDomainName": {
       "value": "sf.priv"
@@ -12,7 +12,7 @@
       "value": "SFDC"
     },
     "existingOuName": {
-      "value": "pc095-infra"
+      "value": "pc041-infra"
     },
     "adminUsername": {
       "value": "GEN-UNIQUE"
@@ -21,13 +21,13 @@
       "value": "GEN-PASSWORD"
     },
     "existingVirtualNetworkName": {
-      "value": "ss95-vnet"
+      "value": "dc41-app-vnet"
     },
     "existingVirtualNetworkRGName": {
-      "value": "ss95-network-rg"
+      "value": "ss41-network-rg"
     },    
     "existingSubnetName": {
-      "value": "ss95-storage-sbn"
+      "value": "ss41-storage-sbn"
     }
   }
 }
