@@ -77,7 +77,7 @@
     },
     {
       "type": "Microsoft.Compute/virtualMachines",
-      "apiVersion": "2018-10-01",
+      "apiVersion": "2018-07-01",
       "location": "[parameters('location')]",
       "name": "[parameters('vmName')]",
       "zones": "[parameters('zones')]",
